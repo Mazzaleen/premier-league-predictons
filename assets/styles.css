@@ -156,7 +156,8 @@ table.predictions th.actual-col, table.predictions td.actual-col {
   position: sticky;
   left: 170px;
   z-index: 2;
-  background: rgba(212, 175, 55, 0.10);
+  background-color: var(--panel-2);
+  background-image: linear-gradient(rgba(212, 175, 55, 0.10), rgba(212, 175, 55, 0.10));
   border-left: 2px solid var(--gold);
   border-right: 2px solid var(--gold);
   width: 170px;
@@ -164,11 +165,14 @@ table.predictions th.actual-col, table.predictions td.actual-col {
 }
 table.predictions thead th.actual-col {
   z-index: 4;
-  background: rgba(212, 175, 55, 0.22);
+  background-color: #16161e;
+  background-image: linear-gradient(rgba(212, 175, 55, 0.22), rgba(212, 175, 55, 0.22));
   color: var(--gold);
   text-shadow: 0 0 12px rgba(212, 175, 55, 0.4);
 }
-table.predictions tbody tr:hover td.actual-col { background: rgba(212, 175, 55, 0.16); }
+table.predictions tbody tr:hover td.actual-col {
+  background-image: linear-gradient(rgba(212, 175, 55, 0.16), rgba(212, 175, 55, 0.16));
+}
 table.predictions tbody tr.award td.actual-col .player { color: var(--gold-soft); }
 
 table.predictions tr.section-break td {
