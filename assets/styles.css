@@ -591,6 +591,19 @@ table.rubric tr.total td.pts { color: var(--accent); }
   header.title-block { padding: 18px 18px; gap: 16px; }
   header.title-block .pl-logo { height: 48px; padding: 8px 12px; }
   header h1 { font-size: 22px; }
-  table.predictions th.cat-col, table.predictions td.cat-col { width: 130px; min-width: 130px; }
-  table.predictions th.actual-col, table.predictions td.actual-col { left: 130px; width: 130px; min-width: 130px; }
+
+  table.predictions { font-size: 11px; }
+  table.predictions thead th { padding: 8px 6px; font-size: 10px; letter-spacing: 0.06em; }
+  table.predictions tbody td { padding: 6px 6px; }
+  table.predictions th.friend { min-width: 78px; }
+  table.predictions th.cat-col, table.predictions td.cat-col { width: 92px; min-width: 92px; }
+  table.predictions th.actual-col, table.predictions td.actual-col { left: 92px; width: 92px; min-width: 92px; }
+
+  table.predictions .pill { font-size: 9px; padding: 3px 6px 3px 4px; gap: 4px; letter-spacing: 0.05em; }
+  table.predictions .pill .crest { width: 13px; height: 13px; }
+  table.predictions .pill.sm { font-size: 8px; padding: 2px 5px 2px 3px; }
+  table.predictions .pill.sm .crest { width: 11px; height: 11px; }
+
+  table.predictions .player { font-size: 11px; }
+  table.predictions .player .qualifier { font-size: 9px; }
 }
