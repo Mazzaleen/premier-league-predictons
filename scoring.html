@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Scoring System — Premier League Predictions</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <header class="title-block">
+      <img class="pl-logo" src="https://upload.wikimedia.org/wikipedia/en/f/f2/Premier_League_Logo.svg" alt="Premier League" onerror="this.remove()" />
+      <div class="title-text">
+        <p class="kicker">Rubric</p>
+        <h1>Scoring System</h1>
+        <a class="scoring-link" href="index.html">All seasons →</a>
+      </div>
+    </header>
+
+    <section class="rubric-panel">
+      <h2>Final table — Top N</h2>
+      <table class="rubric">
+        <thead>
+          <tr><th>Outcome</th><th>Points</th><th>Notes</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="cat">Correct team, exact slot</td><td class="pts">+3</td><td class="note">e.g. "1st: MCI" when actual 1st is MCI</td></tr>
+          <tr><td class="cat">Correct team, wrong slot</td><td class="pts">+1</td><td class="note">In top-N but in a different position</td></tr>
+          <tr><td class="cat">Perfect order bonus</td><td class="pts">+2</td><td class="note">Awarded only when every position is exact</td></tr>
+          <tr class="total"><td class="cat">Top-6 max</td><td class="pts">20</td><td class="note">6 × 3 + 2 mega</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="rubric-panel">
+      <h2>Relegation</h2>
+      <table class="rubric">
+        <thead>
+          <tr><th>Outcome</th><th>Points</th><th>Notes</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="cat">Each correct relegated team</td><td class="pts">+1</td><td class="note">Order doesn't matter — 3 picks, 3 actual</td></tr>
+          <tr class="total"><td class="cat">Relegation max</td><td class="pts">3</td><td class="note">Only counted in seasons that collected it (not 2021/22)</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="rubric-panel">
+      <h2>Individual awards</h2>
+      <table class="rubric">
+        <thead>
+          <tr><th>Award</th><th>Points</th><th>Notes</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="cat">PFA POTY</td><td class="pts">+2</td><td class="note">Player of the Year</td></tr>
+          <tr><td class="cat">PFA YPOTY</td><td class="pts">+2</td><td class="note">Young Player of the Year (U23)</td></tr>
+          <tr><td class="cat">Golden Boot</td><td class="pts">+1</td><td class="note">Top scorer</td></tr>
+          <tr><td class="cat">Playmaker</td><td class="pts">+1</td><td class="note">Most assists — collected from 2023/24 onward</td></tr>
+          <tr><td class="cat">Golden Glove</td><td class="pts">+1</td><td class="note">Most clean sheets</td></tr>
+          <tr><td class="cat">MOTY</td><td class="pts">+1</td><td class="note">Manager of the Year — collected from 2023/24 onward</td></tr>
+          <tr class="total"><td class="cat">Awards max</td><td class="pts">4–8</td><td class="note">Varies by season</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="rubric-panel">
+      <h2>Per-season totals</h2>
+      <table class="rubric">
+        <thead>
+          <tr><th>Season</th><th>Max</th><th>Breakdown</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="cat">2021/22</td><td class="pts">27</td><td class="note">7×3 + 2 mega + 4 awards (POTY+YPOTY only)</td></tr>
+          <tr><td class="cat">2022/23</td><td class="pts">29</td><td class="note">6×3 + 2 mega + 6 awards (no Playmaker/MOTY) + 3 relegation</td></tr>
+          <tr><td class="cat">2023/24</td><td class="pts">31</td><td class="note">6×3 + 2 mega + 8 awards + 3 relegation</td></tr>
+          <tr><td class="cat">2024/25</td><td class="pts">31</td><td class="note">6×3 + 2 mega + 8 awards + 3 relegation</td></tr>
+          <tr><td class="cat">2025/26</td><td class="pts">31</td><td class="note">6×3 + 2 mega + 8 awards + 3 relegation</td></tr>
+        </tbody>
+      </table>
+    </section>
+  </body>
+</html>
